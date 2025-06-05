@@ -31,6 +31,25 @@ public class PontoDoacao {
     }
 
 
+    // Registra um recurso recebido no ponto de doação
+    public void registrarRecursoRecebido(Recurso recurso) {
+        itensRecebidos.add(recurso);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Adiciona uma necessidade urgente
+    public void adicionarNecessidade(Necessidade necessidade) {
+        necessidadesUrgentes.add(necessidade);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Remove uma necessidade urgente
+    public void removerNecessidade(Necessidade necessidade) {
+        necessidadesUrgentes.remove(necessidade);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+
     //Getter e Setter
     public Long getId() {
         return id;

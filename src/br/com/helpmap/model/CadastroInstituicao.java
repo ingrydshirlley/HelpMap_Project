@@ -28,6 +28,25 @@ public class CadastroInstituicao {
     }
 
 
+    // Método para autenticação
+    public boolean autenticar(String email, String senha) {
+        return this.email.equals(email) && this.senha.equals(senha);
+    }
+
+    // Método para atualizar os dados da instituição
+    public void atualizarCadastro(CadastroInstituicao dadosAtualizados) {
+        this.email = dadosAtualizados.email;
+        this.senha = dadosAtualizados.senha;
+        this.nome = dadosAtualizados.nome;
+        this.sobrenome = dadosAtualizados.sobrenome;
+        this.pais = dadosAtualizados.pais;
+        this.estado = dadosAtualizados.estado;
+        this.cidade = dadosAtualizados.cidade;
+        this.cep = dadosAtualizados.cep;
+        this.endereco = dadosAtualizados.endereco;
+    }
+
+
     // Getter e Setter
     public Long getId() {
         return id;

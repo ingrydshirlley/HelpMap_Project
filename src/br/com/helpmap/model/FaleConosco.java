@@ -1,5 +1,6 @@
 package br.com.helpmap.model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class FaleConosco {
@@ -20,6 +21,14 @@ public class FaleConosco {
         this.texto = texto;
         this.dataEnvio = dataEnvio;
     }
+
+
+    // Registrar mensagem
+    public void registrarMensagem() {
+        this.dataEnvio = LocalDateTime.now();
+        System.out.println("Mensagem registrada com sucesso em " + dataEnvio + "!");
+    }
+
 
     //Getter e Setter
     public Long getId() {

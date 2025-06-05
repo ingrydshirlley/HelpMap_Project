@@ -25,6 +25,25 @@ public class Evento {
     }
 
 
+    // Atualiza o status do evento
+    public void atualizarStatus(StatusEvento novoStatus) {
+        this.statusEvento = novoStatus;
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Adiciona uma área afetada
+    public void adicionarAreaAfetada(AreaAfetada area) {
+        this.areasAfetadas.add(area);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Remove uma área afetada
+    public void removerAreaAfetada(AreaAfetada area) {
+        this.areasAfetadas.remove(area);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+
     //Getter e Setter
     public Long getId() {
         return id;

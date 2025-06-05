@@ -36,6 +36,31 @@ public class Abrigo {
     }
 
 
+    // Adiciona um recurso no conjunto de recursos disponíveis
+    public void adicionarRecurso(Recurso recurso) {
+        recursosDisponiveis.add(recurso);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Remove um recurso do conjunto
+    public void removerRecurso(Recurso recurso) {
+        recursosDisponiveis.remove(recurso);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Adiciona uma necessidade urgente
+    public void adicionarNecessidade(Necessidade necessidade) {
+        necessidadesUrgentes.add(necessidade);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+    // Remove uma necessidade urgente
+    public void removerNecessidade(Necessidade necessidade) {
+        necessidadesUrgentes.remove(necessidade);
+        this.ultimaAtualizacao = LocalDate.now();
+    }
+
+
     //Getter e Setter
     public Long getId() {
         return id;
