@@ -19,7 +19,7 @@ O projeto foi desenvolvido para fins acadêmicos e visa simular um sistema que f
 ---
 
 ## Estrutura do Projeto
-
+```bash
 /helpmap
 └── /src
 └── /br/com/helpmap
@@ -28,7 +28,7 @@ O projeto foi desenvolvido para fins acadêmicos e visa simular um sistema que f
 ├── /repository # Futuro local para acesso a dados (banco de dados, arquivos)
 ├── /controller # Futuro local para controle de entrada/saída e integração (APIs, UI)
 └── Main.java # Simulação simples via terminal para cadastrar e testar funcionalidades
-
+```
 ---
 
 ## Tecnologias Utilizadas
@@ -58,5 +58,4 @@ O projeto foi desenvolvido para fins acadêmicos e visa simular um sistema que f
 4. **Simulação no terminal**
    - A aplicação atualmente possui um fluxo simples no Main.java que cria um cadastro de instituição e um abrigo associado.
 
-   -Você pode expandir a lógica adicionando menus e entradas pelo teclado.
-
+   - Você pode expandir a lógica adicionando menus e entradas pelo teclado.
