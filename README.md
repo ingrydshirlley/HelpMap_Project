@@ -1,20 +1,30 @@
 # HelpMap
 
-## Descrição do Projeto
+## Descrição
 
-HelpMap é uma aplicação focada em gerenciar e conectar instituições que oferecem serviços de auxílio em situações de emergência, como abrigos, pontos de doação e eventos relacionados. O sistema permite o cadastro de instituições, registro de abrigos vinculados a essas instituições, e a gestão de recursos, necessidades e status dessas entidades.
+HelpMap é um sistema simples para cadastro e gerenciamento de instituições, abrigos e pontos de doação, desenvolvido em Java. O projeto permite o cadastro via console de instituições, abrigos e pontos de doação, além de consultas para listar os dados cadastrados.
 
-O projeto foi desenvolvido para fins acadêmicos e visa simular um sistema que facilite o gerenciamento dessas informações, oferecendo uma base para possíveis extensões futuras, como integração com banco de dados, interface gráfica e APIs REST.
+O objetivo é facilitar a organização de informações sobre instituições que ajudam pessoas em situação de vulnerabilidade, seus abrigos e pontos onde podem ser feitas doações.
+
+---
+
+## Tecnologias
+
+- Java 11+
+- Maven (gerenciador de dependências e build)
+- Java Collections Framework (listas, conjuntos)
+- Programação orientada a objetos
 
 ---
 
 ## Funcionalidades
 
-- Cadastro de Instituições (com informações detalhadas)
-- Cadastro de Abrigos vinculados a Instituições
-- Gestão de status de ocupação, recursos e necessidades urgentes nos abrigos
-- Estrutura modular dividida em camadas (model, service, repository, controller)
-- Simulação de fluxo de cadastro e relacionamento via linha de comando (Main.java)
+- Cadastro de Instituições via console
+- Cadastro de Abrigos vinculados a uma Instituição
+- Cadastro de Pontos de Doação vinculados a uma Instituição
+- Consulta de Instituições, Abrigos e Pontos de Doação cadastrados
+- Menu interativo via console com opções de cadastro e consulta
+- Estrutura de serviços para manipulação dos dados
 
 ---
 
@@ -54,8 +64,3 @@ O projeto foi desenvolvido para fins acadêmicos e visa simular um sistema que f
 3. **Execute a aplicação**
    ```bash
    java -cp bin br.com.helpmap.Main
-
-4. **Simulação no terminal**
-   - A aplicação atualmente possui um fluxo simples no Main.java que cria um cadastro de instituição e um abrigo associado.
-
-   - Você pode expandir a lógica adicionando menus e entradas pelo teclado.
